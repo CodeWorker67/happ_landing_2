@@ -1,0 +1,151 @@
+import { useTrackedLinks } from '@/hooks/useTrackedLinks';
+
+function Rub({ children, color = '#64748b' }) {
+  return (
+    <span style={{ fontSize: 16, fontWeight: 500, color }}>{children}</span>
+  );
+}
+
+export default function PricingSection() {
+  const { authUrl } = useTrackedLinks();
+
+  return (
+    <section id="pricing" className="section" style={{ background: '#f1f5f9' }}>
+      <div style={{ maxWidth: 760, margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: 44 }}>
+          <p className="kicker">Тарифы</p>
+          <h2 className="h2">Старт без оплаты</h2>
+          <p style={{ fontSize: 16, color: '#64748b', marginTop: 10 }}>Первые сутки — в подарок</p>
+        </div>
+        <div style={{ border: '1.5px solid rgba(8,145,178,.15)', borderRadius: 18, overflow: 'hidden', background: '#fff' }}>
+          <div className="price-row">
+            <div style={{ flex: 1 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <span style={{ fontSize: 17, fontWeight: 800 }}>1 день</span>
+                <span
+                  style={{
+                    background: 'rgba(52,211,153,.12)',
+                    color: '#047857',
+                    border: '1px solid rgba(52,211,153,.3)',
+                    fontSize: 11,
+                    fontWeight: 800,
+                    padding: '4px 10px',
+                    borderRadius: 8,
+                  }}
+                >
+                  Тест
+                </span>
+              </div>
+              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>Все локации и функции</div>
+            </div>
+            <div className="price-col">
+              <div style={{ fontSize: 26, fontWeight: 800, letterSpacing: -1.5, lineHeight: 1 }}>0 ₽</div>
+              <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 3 }}>на сутки</div>
+            </div>
+            <a className="price-btn" href={authUrl}>
+              Начать
+            </a>
+          </div>
+
+          <div className="price-row">
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 17, fontWeight: 800 }}>1 месяц</div>
+              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>299 ₽ за период</div>
+            </div>
+            <div className="price-col">
+              <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: -1.5, lineHeight: 1 }}>
+                299 <Rub>₽</Rub>
+              </div>
+              <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 3 }}>в месяц</div>
+            </div>
+            <a className="price-btn" href={authUrl}>
+              Оформить
+            </a>
+          </div>
+
+          <div className="price-row price-row--hot">
+            <div style={{ flex: 1 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <span style={{ fontSize: 17, fontWeight: 800 }}>3 месяца</span>
+                <span
+                  style={{
+                    background: 'linear-gradient(135deg,#0891b2,#6366f1)',
+                    color: '#fff',
+                    fontSize: 10,
+                    fontWeight: 800,
+                    letterSpacing: 0.5,
+                    textTransform: 'uppercase',
+                    padding: '4px 10px',
+                    borderRadius: 8,
+                  }}
+                >
+                  Хит
+                </span>
+              </div>
+              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>749 ₽ за период</div>
+            </div>
+            <div className="price-col">
+              <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: -1.5, lineHeight: 1, color: '#0891b2' }}>
+                249 <Rub color="rgba(8,145,178,.65)">₽</Rub>
+              </div>
+              <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 3 }}>в месяц</div>
+              <span
+                style={{
+                  display: 'inline-block',
+                  background: 'rgba(52,211,153,.14)',
+                  color: '#047857',
+                  fontSize: 11,
+                  fontWeight: 800,
+                  padding: '3px 9px',
+                  borderRadius: 8,
+                  marginTop: 6,
+                }}
+              >
+                −17%
+              </span>
+            </div>
+            <a className="price-btn price-btn--hot" href={authUrl}>
+              Оформить
+            </a>
+          </div>
+
+          <div className="price-row">
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 17, fontWeight: 800 }}>1 год</div>
+              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>2 399 ₽ за период</div>
+            </div>
+            <div className="price-col">
+              <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: -1.5, lineHeight: 1 }}>
+                199 <Rub>₽</Rub>
+              </div>
+              <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 3 }}>в месяц</div>
+              <span
+                style={{
+                  display: 'inline-block',
+                  background: 'rgba(52,211,153,.14)',
+                  color: '#047857',
+                  fontSize: 11,
+                  fontWeight: 800,
+                  padding: '3px 9px',
+                  borderRadius: 8,
+                  marginTop: 6,
+                }}
+              >
+                −33%
+              </span>
+            </div>
+            <a className="price-btn" href={authUrl}>
+              Оформить
+            </a>
+          </div>
+        </div>
+        <div style={{ display: 'flex', gap: 20, justifyContent: 'center', flexWrap: 'wrap', marginTop: 20 }}>
+          <span style={{ fontSize: 13, color: '#64748b' }}>✓ до 5 устройств</span>
+          <span style={{ fontSize: 13, color: '#64748b' }}>✓ 10 регионов</span>
+          <span style={{ fontSize: 13, color: '#64748b' }}>✓ безлимит трафика</span>
+          <span style={{ fontSize: 13, color: '#64748b' }}>✓ поддержка 24/7</span>
+        </div>
+      </div>
+    </section>
+  );
+}
