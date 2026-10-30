@@ -78,11 +78,11 @@ export default function HeroSection() {
               Активировать доступ
             </a>
             <a className="btn-outline" href={authUrl}>
-              Начать пробный период
+              Попробовать за 9 рублей
             </a>
           </div>
           <p className="hero-note">
-            Сутки без оплаты · регистрация за минуту ·{' '}
+            3 дня за 9 ₽ · регистрация за минуту ·{' '}
             <a href={authUrl} style={{ fontWeight: 700, color: '#0891b2' }}>
               уже зарегистрированы?
             </a>

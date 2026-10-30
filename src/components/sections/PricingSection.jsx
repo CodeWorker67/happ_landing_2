@@ -14,14 +14,14 @@ export default function PricingSection() {
       <div style={{ maxWidth: 760, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 44 }}>
           <p className="kicker">Тарифы</p>
-          <h2 className="h2">Старт без оплаты</h2>
-          <p style={{ fontSize: 16, color: '#64748b', marginTop: 10 }}>Первые сутки — в подарок</p>
+          <h2 className="h2">Начните с 9 ₽</h2>
+          <p style={{ fontSize: 16, color: '#64748b', marginTop: 10 }}>3 дня за 9 ₽ · без автопродления</p>
         </div>
         <div style={{ border: '1.5px solid rgba(8,145,178,.15)', borderRadius: 18, overflow: 'hidden', background: '#fff' }}>
           <div className="price-row">
             <div style={{ flex: 1 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                <span style={{ fontSize: 17, fontWeight: 800 }}>1 день</span>
+                <span style={{ fontSize: 17, fontWeight: 800 }}>3 дня</span>
                 <span
                   style={{
                     background: 'rgba(52,211,153,.12)',
@@ -33,24 +33,28 @@ export default function PricingSection() {
                     borderRadius: 8,
                   }}
                 >
-                  Тест
+                  Пробный
                 </span>
               </div>
-              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>Все локации и функции</div>
+              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>
+                Полный доступ, все локации · без автопродления
+              </div>
             </div>
             <div className="price-col">
-              <div style={{ fontSize: 26, fontWeight: 800, letterSpacing: -1.5, lineHeight: 1 }}>0 ₽</div>
-              <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 3 }}>на сутки</div>
+              <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: -1.5, lineHeight: 1 }}>
+                9 <Rub>₽</Rub>
+              </div>
+              <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 3 }}>за 3 дня</div>
             </div>
             <a className="price-btn" href={authUrl}>
-              Начать
+              Попробовать
             </a>
           </div>
 
           <div className="price-row">
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 17, fontWeight: 800 }}>1 месяц</div>
-              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>299 ₽ за период</div>
+              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>299 ₽ за период · без автопродления</div>
             </div>
             <div className="price-col">
               <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: -1.5, lineHeight: 1 }}>
@@ -82,7 +86,7 @@ export default function PricingSection() {
                   Хит
                 </span>
               </div>
-              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>749 ₽ за период</div>
+              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>749 ₽ за период · без автопродления</div>
             </div>
             <div className="price-col">
               <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: -1.5, lineHeight: 1, color: '#0891b2' }}>
@@ -112,7 +116,7 @@ export default function PricingSection() {
           <div className="price-row">
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 17, fontWeight: 800 }}>1 год</div>
-              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>2 399 ₽ за период</div>
+              <div style={{ fontSize: 13, color: '#64748b', marginTop: 2 }}>2 399 ₽ за период · без автопродления</div>
             </div>
             <div className="price-col">
               <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: -1.5, lineHeight: 1 }}>

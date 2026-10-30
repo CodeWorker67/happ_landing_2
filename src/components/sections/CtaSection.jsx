@@ -30,16 +30,16 @@ export default function CtaSection() {
             marginBottom: 14,
           }}
         >
-          Сутки в подарок —
+          Три дня за 9 рублей.
           <br />
-          начните сегодня.
+          Начните сегодня.
         </h2>
         <p style={{ fontSize: 17, color: 'rgba(255,255,255,.78)', marginBottom: 32 }}>
           Минута на регистрацию. Профиль создаётся без лишних шагов.
         </p>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
           <a className="cta-white" href={authUrl}>
-            Активировать пробный период
+            Попробовать за 9 рублей
           </a>
           <a className="cta-ghost" href={supportUrl} target="_blank" rel="noopener noreferrer">
             Связаться с поддержкой
